@@ -1,4 +1,7 @@
-export default  function App() {
+import Container from 'react-bootstrap/Container';
+import Header from './components/Header';
+
+export default function App() {
   const posts = [
   {
     id: 1,
@@ -18,8 +21,9 @@ export default  function App() {
   },
 ];
   return (
-    <>
-      <h1>Microblog</h1>
+    <Container fluid classname='App'>
+      <Header />
+      <Container>
       {posts.length === 0 ?
         <p>There are no blog posts.</p>
       :
@@ -33,6 +37,7 @@ export default  function App() {
           );
         })
       }
-    </>
+      </Container>
+    </Container>
   );
 }
