@@ -21,7 +21,7 @@ export default function App() {
   },
 ];
   return (
-    <Container fluid classname='App'>
+    <Container fluid className="App">
       <Header />
       <Container>
       {posts.length === 0 ?
