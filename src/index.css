@@ -1,4 +1,4 @@
-.App{
+.App {
   padding: 0;
 }
 
@@ -29,4 +29,8 @@
 
 .Sidebar a:visited {
   color: #444;
+}
+
+.Sidebar .nav-item .active {
+  background-color: #def;
 }
